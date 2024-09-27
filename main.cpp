@@ -161,11 +161,6 @@ int main() {
             bool ladoPuntuacion;
             cout << "¿Deseas usar el lado café (1) o el lado violeta (0) para puntuar, " << jugador.getNombre() << "? ";
             cin >> ladoPuntuacion;
-            
-            if (ladoPuntuacion != 1 && ladoPuntuacion != 0) {
-                    cout << "Opción inválida. Por favor selecciona 1 (lado café) o 0 (lado violeta)." << endl;
-                    return 0;
-                }
 
             int puntos = jugador.calcularPuntuacion(ladoPuntuacion);
             cout << "Puntos de " << jugador.getNombre() << ": " << puntos << endl;
